@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  zk_web:
+    image: qnib/zkui
+    ports:
+      - 9090:9090
+    environment:
+      ZKUI_ZK_SERVER: 192.168.48.2:2181
